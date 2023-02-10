@@ -55,6 +55,8 @@ android {
 }
 
 dependencies {
+    implementation(project(":ui"))
+
     implementation(libs.bundles.compose)
     implementation(libs.bundles.hilt)
 
