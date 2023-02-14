@@ -43,33 +43,27 @@ android {
         jvmTarget = "1.8"
     }
 
-    buildFeatures {
-        compose = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.androidxComposeUi.get()
-    }
     packagingOptions {
-        resources.excludes.add("META-INF/*")
+        packagingOptions.resources.excludes += setOf(
+            "META-INF/*.version",
+            "META-INF/gradle/*",
+            "META-INF/gradle/*.processors",
+            "META-INF/proguard/*",
+            "/*.properties",
+            "fabric/*.properties",
+            "META-INF/*"
+        )
     }
 }
 
 dependencies {
-    implementation(project(":ui"))
+    implementation(project(":navigation"))
 
-    implementation(libs.bundles.compose)
+    kapt(libs.hilt.compiler)
     implementation(libs.bundles.hilt)
 
     with(libs.androidx) {
+        implementation(appcompat)
         implementation(core.ktx)
-        implementation(activity.compose)
     }
-
-
-//    implementation 'androidx.core:core-ktx:1.7.0'
-//    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
-//    implementation 'androidx.activity:activity-compose:1.3.1'
-//    testImplementation 'junit:junit:4.13.2'
-//    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }

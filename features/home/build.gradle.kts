@@ -1,5 +1,5 @@
 plugins {
-    alias(libs.plugins.android.library)
+    alias(libs.plugins.android.application)
     alias(libs.plugins.hilt)
     kotlin("android")
     kotlin("kapt")
@@ -18,9 +18,6 @@ android {
     buildFeatures {
         compose = true
     }
-    composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.androidxComposeUi.get()
-    }
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -29,15 +26,27 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    buildFeatures {
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = libs.versions.androidxComposeUi.get()
+    }
 }
 
 dependencies {
+    implementation(project(":navigation"))
+    implementation(project(":ui"))
+
     kapt(libs.compose.runtime)
+    kapt(libs.hilt.compiler)
 
     implementation(libs.bundles.compose)
     implementation(libs.bundles.hilt)
 
     with(libs.androidx) {
         implementation(core.ktx)
+        implementation(activity.compose)
     }
 }

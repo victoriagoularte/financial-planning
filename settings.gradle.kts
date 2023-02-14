@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Financial Planning"
-include(":app", ":ui")
+include(":app", ":ui", ":features:home", ":navigation")

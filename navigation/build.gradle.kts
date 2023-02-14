@@ -1,8 +1,6 @@
 plugins {
     alias(libs.plugins.android.library)
-    alias(libs.plugins.hilt)
     kotlin("android")
-    kotlin("kapt")
 }
 
 android {
@@ -11,15 +9,7 @@ android {
 
     defaultConfig {
         minSdk = 24
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
-
-    buildFeatures {
-        compose = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.androidxComposeUi.get()
     }
 
     compileOptions {
@@ -32,11 +22,6 @@ android {
 }
 
 dependencies {
-    kapt(libs.compose.runtime)
-
-    implementation(libs.bundles.compose)
-    implementation(libs.bundles.hilt)
-
     with(libs.androidx) {
         implementation(core.ktx)
     }
