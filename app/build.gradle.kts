@@ -43,6 +43,10 @@ android {
         jvmTarget = "1.8"
     }
 
+    kapt {
+        correctErrorTypes = true
+    }
+
     packagingOptions {
         packagingOptions.resources.excludes += setOf(
             "META-INF/*.version",
@@ -58,12 +62,16 @@ android {
 
 dependencies {
     implementation(project(":navigation"))
+    implementation(project(":ui"))
+    implementation(project(":features:home"))
 
     kapt(libs.hilt.compiler)
     implementation(libs.bundles.hilt)
 
     with(libs.androidx) {
         implementation(appcompat)
+        implementation(constraintlayout)
         implementation(core.ktx)
+        implementation(work.runtime)
     }
 }

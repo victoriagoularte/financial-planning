@@ -13,8 +13,7 @@ import javax.inject.Singleton
 internal abstract class NavigationModule {
 
   @Binds
-  @Singleton
-  abstract fun bindNavigation(
+  abstract fun bindHomeNavigation(
     homeNavigationImpl: HomeNavigationImpl
   ): HomeNavigation
 }

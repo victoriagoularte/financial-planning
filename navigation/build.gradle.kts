@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.viclab.ui"
+    namespace = "com.viclab.navigation"
     compileSdk = 33
 
     defaultConfig {

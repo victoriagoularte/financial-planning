@@ -1,12 +1,12 @@
 plugins {
-    alias(libs.plugins.android.application)
+    alias(libs.plugins.android.library)
     alias(libs.plugins.hilt)
     kotlin("android")
     kotlin("kapt")
 }
 
 android {
-    namespace = "com.viclab.ui"
+    namespace = "com.viclab.home"
     compileSdk = 33
 
     defaultConfig {
@@ -33,6 +33,9 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion = libs.versions.androidxComposeUi.get()
     }
+    kapt {
+        correctErrorTypes = true
+    }
 }
 
 dependencies {
@@ -47,6 +50,5 @@ dependencies {
 
     with(libs.androidx) {
         implementation(core.ktx)
-        implementation(activity.compose)
     }
 }

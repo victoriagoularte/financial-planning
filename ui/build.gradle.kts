@@ -1,6 +1,5 @@
 plugins {
     alias(libs.plugins.android.library)
-    alias(libs.plugins.hilt)
     kotlin("android")
     kotlin("kapt")
 }
@@ -35,7 +34,6 @@ dependencies {
     kapt(libs.compose.runtime)
 
     implementation(libs.bundles.compose)
-    implementation(libs.bundles.hilt)
 
     with(libs.androidx) {
         implementation(core.ktx)
