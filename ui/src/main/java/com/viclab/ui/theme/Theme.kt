@@ -1,4 +1,4 @@
-package com.viclab.financialplanning.ui.theme
+package com.viclab.ui.theme
 
 import android.app.Activity
 import android.os.Build
@@ -16,25 +16,29 @@ import androidx.compose.ui.platform.LocalView
 import androidx.core.view.ViewCompat
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    primary = dark_primary,
+    secondary = dark_secondary,
+    tertiary = dark_tertiary,
+    background = dark_background,
+    surface = dark_surface,
+    onPrimary = dark_onPrimary,
+    onSecondary = dark_onSecondary,
+    onTertiary = dark_tertiary,
+    onBackground = dark_onTertiary,
+    onSurface = dark_onSurface,
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
-
-    /* Other default colors to override
-    background = Color(0xFFFFFBFE),
-    surface = Color(0xFFFFFBFE),
-    onPrimary = Color.White,
-    onSecondary = Color.White,
-    onTertiary = Color.White,
-    onBackground = Color(0xFF1C1B1F),
-    onSurface = Color(0xFF1C1B1F),
-    */
+    primary = light_primary,
+    secondary = light_secondary,
+    tertiary = light_tertiary,
+    background = light_background,
+    surface = light_surface,
+    onPrimary = light_onPrimary,
+    onSecondary = light_onSecondary,
+    onTertiary = light_tertiary,
+    onBackground = light_onTertiary,
+    onSurface = light_onSurface,
 )
 
 @Composable
