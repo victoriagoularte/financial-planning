@@ -68,8 +68,8 @@ fun CardValue(
     }
 }
 
-@Preview(name = "CardValue")
-@Preview(name = "CardValueDarkMode", uiMode = Configuration.UI_MODE_NIGHT_YES)
+@Preview(showBackground = true, name = "CardValue")
+@Preview(showBackground = true, name = "CardValueDarkMode", uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Composable
 private fun PreviewCardValue() {
     FinancialPlanningTheme {
