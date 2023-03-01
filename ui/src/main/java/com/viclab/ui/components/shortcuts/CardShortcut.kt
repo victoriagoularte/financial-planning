@@ -36,6 +36,7 @@ fun CardShortcut(
 ) {
     Surface(
         onClick = onClick,
+        color = MaterialTheme.colorScheme.surface,
         shape = MaterialTheme.shapes.small,
         modifier = modifier
     ) {

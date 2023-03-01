@@ -14,3 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Financial Planning"
 include(":app", ":ui", ":features:home", ":navigation")
+include(":domain:bank")
+include(":data:bank")

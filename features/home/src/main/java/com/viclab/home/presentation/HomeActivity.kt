@@ -60,7 +60,7 @@ fun HomeScreen() {
 }
 
 @ExperimentalMaterial3Api
-@Preview(showBackground = true)
+@Preview(showBackground = false)
 @Preview(showBackground = true, uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Composable
 fun HomePreview() {
