@@ -24,5 +24,13 @@ gradlePlugin {
             id = "com.viclab.hilt"
             implementationClass = "AndroidHiltConventionPlugin"
         }
+        register("compose") {
+            id = "com.viclab.compose"
+            implementationClass = "AndroidLibraryComposeConventionPlugin"
+        }
+        register("feature") {
+            id = "com.viclab.feature"
+            implementationClass = "AndroidFeatureConventionPlugin"
+        }
     }
 }
