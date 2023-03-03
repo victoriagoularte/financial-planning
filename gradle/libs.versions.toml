@@ -20,9 +20,10 @@ composeMaterial = "1.1.0-alpha01"
 material = "1.8.0"
 hilt = "2.44.2"
 hiltExt = "1.0.0"
-kotlin = "1.7.0"
+kotlin = "1.7.21"
 junit4 = "4.13.2"
 room = "2.5.0"
+androidxHiltNavigationCompose = "1.1.0-alpha01"
 
 [libraries]
 androidx-activity-compose = { group = "androidx.activity", name="activity-compose", version.ref = "androidxActivityCompose"}
@@ -33,6 +34,7 @@ android-desugarJdkLibs = { group = "com.android.tools", name = "desugar_jdk_libs
 androidx-lifecycle-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "androidxLifecycle" }
 androidx-navigation-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "androidxNavigation" }
 androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "androidxNavigation" }
+androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation", version.ref = "androidxHiltNavigationCompose" }
 androidx-navigation-test = { group = "androidx.navigation", name = "navigation-test", version.ref = "androidxNavigation" }
 androidx-test-core = { group = "androidx.test", name = "core", version.ref = "androidxTestCore" }
 androidx-test-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidxEspresso" }
@@ -68,7 +70,8 @@ kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-pl
 compose = ["androidx-compose-bom", "androidx-compose-foundation", "androidx-compose-ui",
     "androidx-compose-ui-tooling", "androidx-compose-ui-tooling-preview", "androidx-compose-material",
     "androidx-compose-material-icons", "androidx-navigation-compose", "androidx-activity-compose"]
-hilt = ["hilt-android", "hilt-android-testing", "hilt-compiler", "hilt-ext-compiler", "hilt-ext-work"]
+hilt = ["hilt-android", "hilt-android-testing", "hilt-compiler", "hilt-ext-compiler", "hilt-ext-work",
+    "androidx-hilt-navigation-compose"]
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }

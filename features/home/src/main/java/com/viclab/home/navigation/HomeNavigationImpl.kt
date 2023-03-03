@@ -6,7 +6,7 @@ import com.viclab.home.presentation.HomeActivity
 import com.viclab.navigation.home.HomeNavigation
 import javax.inject.Inject
 
-internal class HomeNavigationImpl @Inject constructor() : HomeNavigation {
+class HomeNavigationImpl @Inject constructor() : HomeNavigation {
 
     override fun navigateToHome(context: Context) {
         context.startActivity(Intent(context, HomeActivity::class.java))

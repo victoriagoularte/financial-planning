@@ -39,6 +39,15 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
+    buildFeatures {
+        compose = true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = libs.versions.androidxComposeCompiler.get()
+    }
+
     kotlinOptions {
         jvmTarget = "1.8"
     }
@@ -67,6 +76,7 @@ dependencies {
 
     kapt(libs.hilt.compiler)
     implementation(libs.bundles.hilt)
+    implementation(libs.bundles.compose)
 
     with(libs.androidx) {
         implementation(appcompat)
