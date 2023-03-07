@@ -7,6 +7,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":features:wallet"))
     with(libs.androidx) {
         implementation(core.ktx)
     }

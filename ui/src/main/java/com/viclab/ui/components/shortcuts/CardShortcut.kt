@@ -4,6 +4,7 @@ import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyRow
@@ -43,17 +44,18 @@ fun CardShortcut(
         Row(
             verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier
-                .width(128.dp)
+                .height(56.dp)
+                .width(136.dp)
         ) {
             Icon(
                 imageVector = icon,
                 contentDescription = null,
-                modifier = Modifier.padding(8.dp)
+                modifier = Modifier.padding(start = 8.dp, end = 16.dp, top = 8.dp, bottom = 8.dp)
             )
             Text(
                 text = label,
                 style = MaterialTheme.typography.bodyMedium,
-                modifier = Modifier
+                modifier = Modifier.padding(end = 8.dp)
             )
         }
     }

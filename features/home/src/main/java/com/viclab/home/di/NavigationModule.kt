@@ -1,6 +1,6 @@
 package com.viclab.home.di
 
-import com.viclab.home.navigation.HomeNavigationImpl
+import com.viclab.home.navigation.FeatureHomeNavigation
 import com.viclab.navigation.home.HomeNavigation
 import dagger.Binds
 import dagger.Module
@@ -13,6 +13,6 @@ internal abstract class NavigationModule {
 
   @Binds
   abstract fun bindsHomeNavigation(
-    homeNavigationImpl: HomeNavigationImpl
+    homeNavigationImpl: FeatureHomeNavigation
   ): HomeNavigation
 }
