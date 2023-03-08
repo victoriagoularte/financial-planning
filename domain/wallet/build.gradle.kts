@@ -9,6 +9,7 @@ android {
 
 dependencies {
     implementation(project(":data:account"))
+    implementation(project(":model"))
 
     with(libs.androidx) {
         implementation(core.ktx)
