@@ -34,7 +34,6 @@
             <option value="$PROJECT_DIR$/domain/calendar" />
             <option value="$PROJECT_DIR$/domain/home" />
             <option value="$PROJECT_DIR$/features" />
-            <option value="$PROJECT_DIR$/features/home" />
             <option value="$PROJECT_DIR$/features/wallet" />
             <option value="$PROJECT_DIR$/model" />
             <option value="$PROJECT_DIR$/navigation" />

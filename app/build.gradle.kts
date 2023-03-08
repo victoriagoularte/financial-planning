@@ -72,7 +72,7 @@ android {
 dependencies {
     implementation(project(":navigation"))
     implementation(project(":ui"))
-    implementation(project(":features:home"))
+    implementation(project(":features:wallet"))
 
     kapt(libs.hilt.compiler)
     implementation(libs.bundles.hilt)

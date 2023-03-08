@@ -1,4 +1,4 @@
-package com.viclab.home.navigation
+package com.viclab.financialplanning.navigation
 
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder

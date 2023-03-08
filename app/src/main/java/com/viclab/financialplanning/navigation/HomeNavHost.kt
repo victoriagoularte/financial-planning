@@ -1,4 +1,4 @@
-package com.viclab.home.navigation
+package com.viclab.financialplanning.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier

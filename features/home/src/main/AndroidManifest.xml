@@ -3,7 +3,7 @@
 
     <application>
         <activity
-            android:name="com.viclab.home.presentation.HomeActivity"
+            android:name="com.viclab.financialplanning.presentation.HomeActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.FinancialPlanning">
