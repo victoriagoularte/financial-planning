@@ -1,4 +1,4 @@
-package com.viclab.home
+package com.viclab.core
 
 import org.junit.Test
 
